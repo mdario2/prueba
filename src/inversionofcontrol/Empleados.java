@@ -1,0 +1,7 @@
+package inversionofcontrol;
+
+public interface Empleados {
+
+	public String getTareas();
+	
+}
