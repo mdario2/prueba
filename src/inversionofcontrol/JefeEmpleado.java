@@ -6,4 +6,10 @@ public class JefeEmpleado implements Empleados {
 		return "Gestiono los asuntos de los empleados de mi area";
 	}
 
+	@Override
+	public String getInformes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
