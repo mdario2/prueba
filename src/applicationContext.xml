@@ -19,6 +19,9 @@
 <!-- creacion de la dependencia con un SETTER -->
 <bean id="miSecretarioEmpleado" class="inversionofcontrol.SecretarioEmpleado">
 	<property name="informeNuevo" ref="miInforme"></property>
+	
+	<property name="email" value="secretaria@ufps.edu.co"></property>
+	<property name="nombreEmpresa" value="UFPS	"></property>
 </bean>
 
 </beans>

@@ -21,9 +21,11 @@ public class UsoEmpleados {
 		System.out.println(Juan.getTareas());
 		System.out.println(Juan.getInformes());*/
 		
-		Empleados Andrea = contexto.getBean("miSecretarioEmpleado", Empleados.class);
+		SecretarioEmpleado Andrea = contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);
 		System.out.println(Andrea.getTareas());
 		System.out.println(Andrea.getInformes());
+		System.out.println("Email: "+Andrea.getEmail());
+		System.out.println(Andrea.getNombreEmpresa());
 		
 		
 		//cerrar el archivo xml luego de haberlo utilizado
