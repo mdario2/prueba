@@ -10,7 +10,15 @@
 ">
 <!-- creacion de la dependencia -->
 <bean id="miInforme" class= "inversionofcontrol.Informe" ></bean>
+
+<!-- creacion de la dependencia con un CONSTRUCTOR-->
 <bean id="miEmpleado" class="inversionofcontrol.DirectorEmpleado">
 <constructor-arg ref="miInforme"></constructor-arg>
 </bean>
+
+<!-- creacion de la dependencia con un SETTER -->
+<bean id="miSecretarioEmpleado" class="inversionofcontrol.SecretarioEmpleado">
+	<property name="informeNuevo" ref="miInforme"></property>
+</bean>
+
 </beans>

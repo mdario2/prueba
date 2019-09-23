@@ -17,9 +17,15 @@ public class UsoEmpleados {
 		
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Empleados Juan = contexto.getBean("miEmpleado", Empleados.class);
+		/*Empleados Juan = contexto.getBean("miEmpleado", Empleados.class);
 		System.out.println(Juan.getTareas());
-		System.out.println(Juan.getInformes());
+		System.out.println(Juan.getInformes());*/
+		
+		Empleados Andrea = contexto.getBean("miSecretarioEmpleado", Empleados.class);
+		System.out.println(Andrea.getTareas());
+		System.out.println(Andrea.getInformes());
+		
+		
 		//cerrar el archivo xml luego de haberlo utilizado
 		contexto.close();
 		
